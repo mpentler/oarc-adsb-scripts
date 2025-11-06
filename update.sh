@@ -212,10 +212,14 @@ else
     if /usr/bin/python3 -m venv $VENV >> $LOGFILE \
         && echo 36 \
         && source $VENV/bin/activate >> $LOGFILE \
+        && echo 37 \
+        && python3 -c "import setuptools" 2>/dev/null || python3 -m pip install setuptools >> $LOGFILE \
         && echo 38 \
-        && python3 setup.py build >> $LOGFILE \
+        && python3 -c "import asyncore" 2>/dev/null || python3 -m pip install pyasyncore >> $LOGFILE \
+        && echo 39 \
+        && python3 -m pip install --upgrade pip >> $LOGFILE \
         && echo 40 \
-        && python3 setup.py install >> $LOGFILE \
+        && python3 -m pip install . >> $LOGFILE \
         && echo 46 \
         && revision > $IPATH/mlat_version || rm -f $IPATH/mlat_version \
         && echo 48 \
