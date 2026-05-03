@@ -1,6 +1,6 @@
 # OARC ADS-B feed client
 
-- If you want to join us and feed that is fine, but I would REALLY appreciate you wanting to be part of our OARC amateur radio community, which this project is a part of. See https://www.oarc.uk for details!
+- **PLEASE** only feed us if you are part of OARC. THat is the whole point. See https://www.oarc.uk for details!
 - These scripts aid in setting up your current ADS-B receiver to feed the [OARC ADS-B map](https://adsb.oarc.uk/).
 - They will not disrupt any existing feed clients already present.
 - MLAT is supported - specify a username when asked to enable this.
